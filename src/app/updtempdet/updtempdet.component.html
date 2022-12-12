@@ -1,0 +1,27 @@
+<div class="header">
+  <h1>Update Employee Details</h1>
+</div>
+<div class="formcontrol">
+    <form [formGroup]="empform" (ngSubmit)="updtemp(); empform.reset();">
+       <label for="">Employee ID:  </label>
+       <input type="number" formControlName="id" placeholder="Enter Employee Id">
+       <!-- <span style="color:red;" *ngIf="empform.controls['id'] && empform.controls['id'].touched && empform.controls['id'].invalid">Required Field</span> <br><br> -->
+       <label for="">Employee Name:</label>
+       <input type="text" formControlName="emp_nm" placeholder="Enter Employee Name">
+       <!-- <span style="color:red;" *ngIf="empform.controls['emp_nm'] && empform.controls['emp_nm'].touched && empform.controls['emp_nm'].invalid">Required Field</span> <br><br> -->
+       <label for="">Location : </label>
+       <label for="">City : </label>
+       <input type="text" formControlName="city" placeholder="Enter City">
+       <!-- <span style="color:red;" *ngIf="empform.controls['city'] && empform.controls['city'].touched && empform.controls['city'].invalid">Required Field</span><br><br> -->
+       <label for="">State : </label> <input type="text" formControlName="state" placeholder="Enter State"> 
+       <!-- <span style="color:red;" *ngIf="empform.controls['state'] && empform.controls['state'].touched && empform.controls['state'].invalid">Required Field</span><br><br> -->
+       <label for="">CTC: </label>
+       <input type="number" formControlName="CTC" placeholder="Enter CTC">
+       <!-- <span style="color:red;" *ngIf="empform.controls['CTC'] && empform.controls['CTC'].touched && empform.controls['CTC'].invalid">Required Field</span><br><br> -->
+       <label for="">Experience:</label>
+       <input type="number" formControlName="exp" placeholder="Enter Experience">
+       <!-- <span style="color:red;" *ngIf="empform.controls['exp'] && empform.controls['exp'].touched && empform.controls['exp'].invalid">Required Field</span><br><br> -->
+       <button type="submit">Update</button>
+       <br>
+    </form>
+   </div>

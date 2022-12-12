@@ -1,0 +1,32 @@
+<div class="header">
+<h1>Employee Data</h1>
+</div>
+<div class="tab">
+<table class="table" style="width: 600px;">
+    <tr>
+        <th>Employee ID</th>
+        <th>Employee name</th>
+        <th>Location</th>
+        <th>CTC</th>
+        <th>Experience</th>
+        <th>Delete</th>
+        <th>Update</th>
+    </tr>
+    <tr *ngFor="let data of emplist">
+        <th>{{data.id}}</th>
+        <th>{{data.emp_nm}}</th>
+        <th>City:{{data.location.city}}
+            State:{{data.location.state}}</th>
+        <th>{{data.CTC}}</th>
+        <th>{{data.exp}}</th>
+        <th><button class="btn" (click)="delempid(data._id)">DELETE Details</button></th>
+        <th><button class="btn" (click)="onupdt(data._id)">Update Details</button></th>
+    </tr>
+    <br><br><br>
+    
+        <button><a routerLink="/addnewemp">ADD NEW EMPLOYEE</a>
+        </button>
+    
+</table>
+</div>
+<br><br>

@@ -1,0 +1,53 @@
+
+.header
+{
+    /* color: rgb(198, 26, 38); */
+    color: rgb(205, 186, 18);
+    text-align: center;
+}
+.table,th,tr
+{
+    border: 1.8px solid rgba(7, 7, 7, 0.491);
+    padding:10px;
+    background-color: rgb(206, 223, 53);
+    align-items: center;
+    /* border-spacing: 5px; */
+}
+/* th,tr
+{
+    padding: 10px;
+} */
+button
+{
+    background-color: white;
+    width: 180px;
+    height: 33px;
+    margin-top: 25px;
+    margin-bottom:30px;
+    border: 1.6px solid black;
+    /* margin-left: 50%; */
+}
+a
+{
+    text-decoration: none;
+    color:black;
+}
+.tab
+{
+    max-width: 75%;
+    height: auto;
+    margin: 50px auto;
+    padding: 30px 20px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+    align-items: center;
+
+}
+.btn
+{
+    border: 1.6px solid black;
+    width: 120px;
+    height: 33px;
+    margin-left: 50px;
+    margin-right: 35px;
+    
+}
