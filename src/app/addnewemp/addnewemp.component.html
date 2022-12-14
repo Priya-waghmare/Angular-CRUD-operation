@@ -6,27 +6,27 @@
  <form [formGroup]="empform" (ngSubmit)="addemp()">
     <label for="">Employee ID:  </label>
     <input type="number" formControlName="id" placeholder="Enter Employee Id">
-    <!-- <span style="color:red;" *ngIf="empform.controls['id'] && empform.controls['id'] .invalid && empform.controls['id'] .touched"> Required Field</span> -->
+    <span style="color:red;" *ngIf="empform.controls['id'] && empform.controls['id'] .invalid && empform.controls['id'] .touched"> Required Field</span>
      <br><br>
     <label for="">Employee Name:</label>
     <input type="text" formControlName="emp_nm" placeholder="Enter Employee Name">
-    <!-- <span style="color:red;" *ngIf="empform.controls['emp_nm']  && empform.controls['emp_nm'].invalid && empform.controls['emp_nm'].touched"> Required Field</span> -->
+    <span style="color:red;" *ngIf="empform.controls['emp_nm']  && empform.controls['emp_nm'].invalid && empform.controls['emp_nm'].touched"> Required Field</span>
     <br><br>
     <label for="">Location : </label>
     <label for="">City : </label>
     <input type="text" formControlName="city" placeholder="Enter City">
-    <!-- <span style="color:red;" *ngIf="empform.controls['city'] && empform.controls['city'].invalid && empform.controls['city'].touched"> Required Field</span> -->
+    <span style="color:red;" *ngIf="empform.controls['city'] && empform.controls['city'].invalid && empform.controls['city'].touched"> Required Field</span>
     <br><br>
     <label for="">State : </label> <input type="text" formControlName="state" placeholder="Enter State"> 
-    <!--<span style="color:red;" *ngIf="empform.controls['state'] && empform.controls['state'].invalid && empform.controls['state'].touched"> Required Field</span> -->
+    <span style="color:red;" *ngIf="empform.controls['state'] && empform.controls['state'].invalid && empform.controls['state'].touched"> Required Field</span>
     <br><br>
     <label for="">CTC: </label>
     <input type="number" formControlName="CTC" placeholder="Enter CTC">
-    <!-- <span style="color:red;" *ngIf="empform.controls['CTC'] && empform.controls['CTC'].invalid && empform.controls['CTC'].touched"> Required Field</span> --> 
+    <span style="color:red;" *ngIf="empform.controls['CTC'] && empform.controls['CTC'].invalid && empform.controls['CTC'].touched"> Required Field</span> 
     <br><br>
     <label for="">Experience:</label>
     <input type="number" formControlName="exp" placeholder="Enter Experience">
-    <!-- <span style="color:red;" *ngIf="empform.controls['exp'] && empform.controls['exp'].invalid && empform.controls['exp'].touched"> Required Field</span> -->
+    <span style="color:red;" *ngIf="empform.controls['exp'] && empform.controls['exp'].invalid && empform.controls['exp'].touched"> Required Field</span>
     <br><br>
     <button type="submit">ADD EMPLOYEE</button>
     <br>
